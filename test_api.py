@@ -1,5 +1,6 @@
 import os
 import requests
+import time
 
 from dotenv import load_dotenv
 from selenium import webdriver
@@ -34,10 +35,12 @@ class AuthorPurchase:
         self.driver.find_element(By.ID, 'password').send_keys(password)
 
         self.driver.find_element(By.ID, 'login-button').click()
+        time.sleep(3)
 
     # Метод для добавления товара в корзину
     def add_item_to_cart(self, product):
         self.driver.find_element(By.ID, product).click()
+        time.sleep(3)
 
     # Метод для завершения процесса покупки
     def checkout(self, first_name, last_name, postal_code):
@@ -54,7 +57,8 @@ class AuthorPurchase:
         self.driver.find_element(By.ID, 'continue').click()
         self.driver.find_element(By.ID, 'finish').click()
         self.driver.find_element(By.ID, 'back-to-products').click()
-
+        time.sleep(3)
+        
 # Класс для работы с репозиториями GitHub через API
 class Repository:
     def __init__(self, user_name, user_token, rep_name, headers):
