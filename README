@@ -1,13 +1,12 @@
-1. Необходимо установит зависимости через терминал прописав следующую команду
+1. Откройте терминал в корневой папке проекта и выполните
+следующую команду для установки всех необходимых зависимостей:
+
 pip install -r requirements.txt
 
-2. Укажите в файле env свои данные
-GITHUB_USERNAME=<your_GITHUB_USERNAME>
-GITHUB_API_TOKEN=<your_GITHUB_API_TOKEN>
-GITHUB_REPOSITORY=<your_GITHUB_REPOSITORY>
-USER_NAME=visual_user
-USER_PASSWORD=secret_sauce
-PRODUCT_ITEM=add-to-cart-sauce-labs-backpack
-LAST_NAME=<your_LAST_NAME>
-FIRST_NAME=<your_FIRST_NAME>
-POST_INDEX=<your_POST_INDEX>
+2. Файле .env укажите ваши данные, заменив значения на актуальные:
+
+GITHUB_USERNAME=<ваш_логин_GitHub>
+GITHUB_API_TOKEN=<ваш_токен_API_GitHub>
+
+Файл .env содержит важную информацию для работы с GitHub API, убедитесь, 
+что токен имеет необходимые права для создания и удаления репозиториев.
