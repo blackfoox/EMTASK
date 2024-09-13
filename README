@@ -8,7 +8,15 @@ pip install -r requirements.txt
 GITHUB_USERNAME=<ваш_логин_GitHub>
 GITHUB_API_TOKEN=<ваш_токен_API_GitHub>
 
+Создание токена:
+Settings>Developer Settings>Personal access tokens>Tokens (classic)>Generate new token>
+Generate new token (classic)
+
+Поставьте галочки:
+- repo
+- delete_repo
+
 Файл .env содержит важную информацию для работы с GitHub API, убедитесь, 
 что токен имеет необходимые права для создания и удаления репозиториев.
 
-3. Убедитесь, что на вашем устройстве есть браузер Chrome.
+4. Убедитесь, что на вашем устройстве есть браузер Chrome.
